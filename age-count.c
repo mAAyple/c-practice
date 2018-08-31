@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <time.h>
-#include <stdint.h>
+//#include <stdint.h>
+//#define TIME_UTC
 int main()
 {
-	int timespec_get( struct timespec *ts int base);
-	time_t result = time(NULL);
-	int my_age;
-	my_age = 19;
-	int my_seconds_age;
-	my_seconds_age = 913461330;
-	int my_epoch_age; 
-	my_epoch_age = TIME_UTC - my_seconds_age;
-	if(result != -1)
-		printf("I am my_seconds_age/n");
-		printf("%s my_epoch_age");
+	struct timespec ts;
+	timespec_get(&ts, TIME_UTC);
+	char buff[100];
+	strftime(buff, sizeof buff, "%D %T", gmtime(&ts.tv_sec));
+	//int my_seconds_age;
+	//my_seconds_age = 913461330;
+	//int my_epoch_age; 
+	//my_epoch_age = &tv_sec - &my_seconds_age;
+	//printf("I am" &my_seconds_age);
+	//printf("%D &my_epoch_age");
+	printf("My Age: %s", buff, ts.tv_sec);
 }
