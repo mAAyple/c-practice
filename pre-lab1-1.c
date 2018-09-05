@@ -3,25 +3,34 @@
 int main()
 {
 	int my_int;
-	long my_long;
+	long long my_long;
 	unsigned int my_unsigned_int;
-	unsigned long my_unsigned_long;
+	unsigned long long my_unsigned_long;
 	printf("Please enter any numerical value here:\n");
 	scanf("%d",&my_int);
-	scanf("%ld",&my_long);
+	scanf("%lld",&my_long);
 	scanf("%u",&my_unsigned_int);
-	scanf("%lu",&my_unsigned_long);
+	scanf("%llu",&my_unsigned_long);
 	printf("Here is your number as:\n");
-	printf("A int: %d \n", my_int );
-	printf("A long: %ld \n", my_long );
-	printf("An Unsigned int: %u \n", my_unsigned_int );
-	printf("And a Unsigned long: %lu \n", my_unsigned_long );
+	printf("A int: %d", my_int );
+	printf("\n");
+	printf("A long: %lld", my_long );
+	printf("\n");
+	printf("An Unsigned int: %u", my_unsigned_int );
+	printf("\n");
+	printf("And a Unsigned long: %llu", my_unsigned_long );
+	printf("\n");
 	printf("Now where the fun begins...\n");
 	printf("Here are your same numbers in hex!\n");
-	printf("Your int: %x \n", my_int);
-	printf("Your long: %lx \n", my_long);
-	printf("Your Unsigned int: %x \n", my_unsigned_int);
-	printf("Your Unsigned long: %lx \n", my_unsigned_long);
+	printf("Your int: %x", my_int);
+	printf("\n");
+	printf("Your long: %llx", my_long);
+	printf("\n");
+	printf("Your Unsigned int: %x", my_unsigned_int);
+	printf("\n");
+	printf("Your Unsigned long: %llx", my_unsigned_long);
+	printf("\n");
 	printf("Thank you for helping out ! \n");
+	return 0;
 
 }
