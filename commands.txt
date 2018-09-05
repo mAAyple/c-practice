@@ -1,0 +1,13 @@
+Compile Command
+gcc -Wall -o program program.c
+Git management
+git init
+git add .
+git commit -m "commit"
+git push
+for new folder:
+git remote add origin https://github.com/mAAyple/c-practice.git
+git remote -v
+git push -u origin master
+cd /Users/mAyple/Documents/SCHOOL/COLLEGE
+
