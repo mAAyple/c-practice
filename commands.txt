@@ -1,6 +1,6 @@
 Compile Command
 gcc -Wall -o program program.c
-Git management
+Git management:
 git init
 git add .
 git commit -m "commit"
