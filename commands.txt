@@ -1,4 +1,5 @@
-Compile Command
+ Compile Command
+gcc -Wall -o program program.c -lncurses
 gcc -Wall -o program program.c
 Git management:
 git init
